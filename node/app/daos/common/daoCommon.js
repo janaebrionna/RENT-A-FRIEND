@@ -1,3 +1,5 @@
+// THANK YOU SO MUCH MS.LORRAINE FOR ALL YOUR HELP.
+
 const con = require('../../config/dbconfig')
 
 const daoCommon = {
@@ -55,14 +57,14 @@ const daoCommon = {
     },
 
     create: (req, res, table)=> {
-        if (object.keys(req.body).length ===0){
+        if (Object.keys(req.body).length ===0){
             res.json({
                 "error":true,
                 "message":"no fields to create"
             })
         }else{
-            const fields = object.keys(req.body)
-            const values = object.values(req.body)
+            const fields = Object.keys(req.body)
+            const values = Object.values(req.body)
 
             con.execute(
                 `INSERT INTO ${table}

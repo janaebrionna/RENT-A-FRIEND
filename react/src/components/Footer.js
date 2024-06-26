@@ -2,10 +2,13 @@ const Footer =()=> {
 
     return(
         <>
-        <h2 className="text-capitalize">RENT-A-FRIEND!Footer</h2>
+        <footer className="footer" id="footer">
+            <h2 className="footer-heading text-capitalize">NAE NETWERKS&copy;2024 </h2>
+        </footer>
         
         </>
     )
 }
 
 export default Footer
+        

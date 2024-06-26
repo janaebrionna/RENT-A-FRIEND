@@ -16,18 +16,20 @@ const Friends =()=> {
 
     },[])
 
-    // console.log(friends)
+    console.log(friends)
 
     const friendCards = friends.map(friend =>{
+        
         return <Card 
-                    key={friends.friend_id}
-                    id={friends.friend_id}
-                    name={friends.friend}
-                    imgurl={friends.imgurl}
-                    age={friends.age}
-                    adjectives={friends.adjectives}
-                    interests={friends.interests}
-                    price={friends.price}
+                    key={friend.friend_id}
+                    id={friend.friend_id}
+                    name={friend.friend}
+                    imgurl={friend.imgurl}
+                    age={friend.age}
+                    adjectives={friend.adjectives}
+                    interests={friend.interests}
+                    price={friend.price}
+                    
 
                 />
 
@@ -38,7 +40,8 @@ const Friends =()=> {
                 <main className="main" id="friendsMain">
                     <div className="container">
                         <h2>friends</h2>
-                        <div className="row row-cols-1 row=cols=md-5 g-4">
+                        {/* <h2>{friends[0].friend}</h2>  */}
+                        <div className="row row-cols-1 row-cols-md-5 g-4">
                             {friendCards}
                         </div>
                     </div>

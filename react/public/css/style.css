@@ -1,0 +1,75 @@
+:root {
+    --hi:"Hi Melody", sans-serif;
+    --julius:"Julius Sans One", sans-serif;
+    --bad:"Bad Script", cursive;
+    --prim: #f1a1f6;
+    --sec:#000;
+    --tert:#e7d6d6;
+}
+
+.hi-melody-regular {
+    font-family: "Hi Melody", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.julius-sans-one-regular {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bad-script-regular {
+    font-family: "Bad Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+/* favorite part */
+
+.link{
+    color: var(--prim)
+}
+
+.friend-link{
+color: #000;
+font-family:var(--julius) ;
+}
+
+.text{
+    color: var(--sec);
+    font-family: var(--hi);
+    font-size: 1.8em;
+    background-color: #f1a1f6;
+    padding: 20px 20px;
+
+}
+
+.heading{
+    color: #f787f7;
+    font-family: var(--bad);
+    font-size: 2.0em;
+    padding: 20px 20px;
+}
+
+
+.footer-heading{
+    color: #f787f7;
+    background-color: #000;
+    font-family: var(--hi);
+    font-size: larger;
+}
+
+.header{
+    background-color: #000;
+}
+
+.home-subheading{
+    font-family: var(--hi);
+    font-size: 4.0em;
+    
+}
